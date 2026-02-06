@@ -82,3 +82,25 @@
   outline: none;
   background: linear-gradient(135deg, rgb(239, 247, 255) 0%, rgb(214, 229, 247) 100%);
 }
+
+
+
+.search__icon path {
+  fill: white;
+}
+</style>
+
+<div style="text-align: center;">
+    <button class="calc-btn" id="Calculate">Calculate</button>
+</div>
+
+<p id="answer"></p>
+<script>
+    document.getElementById("calculate").addEventListener("click", function() {
+    const pi = Math.PI;
+    const radius = Number(document.getElementById("radius").value);
+    const answer = Math.PI*radius*radius;
+    document.getElementById("answer").textContent = "Answer: " + answer;
+    });
+    </script>
+</body>
